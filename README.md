@@ -12,7 +12,22 @@ Functionality of project is quiet simple:
 
 Steps to setup a Struts 1.3 application:
 
+
 1. create a new dynamic web project in your IDE, do click check on the option "generate web.xml"
 2. Once project is ready, right click --> configure --> convert into maven project
-3. Now we have pom.xml available, here we need to add dependencies for out struts application.
+3. pom.xml (Project Object Model):
+   Now we have pom.xml available, here we need to add dependencies for out struts application.
+   we can remove the build tag from the pom.xml and 
+   go to mvnrepository.com and add following dependencies from there in our pom.xml:
+   Servlet 3.1.0
+   struts core
+   struts tag lib
+   Save the pom.xml and build the project.
+4. web.xml (Web Deployment descriptor):
+   Web-content --> web-inf --> web.xml
+   Remove the welcome tag. Here we need to register the struts application's "Action Servlet", Action servlet act as a            controller in MVC model of struts.
+   Action Servlet name and class are provided, Servlet mapping is done to map the servlet with the url.
+5. struts-config.xml:
+   
+   
    
