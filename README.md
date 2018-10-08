@@ -28,6 +28,7 @@ Steps to setup a Struts 1.3 application:
    Remove the welcome tag. Here we need to register the struts application's "Action Servlet", Action servlet act as a            controller in MVC model of struts.
    Action Servlet name and class are provided, Servlet mapping is done to map the servlet with the url.
 5. struts-config.xml:
-   
+   in web-inf folder, create a new xml file with this name.
+   copy the DOCTYPE from internet for 1.3 version of struts-config.xml
    
    
