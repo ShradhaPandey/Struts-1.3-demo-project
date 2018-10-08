@@ -61,7 +61,7 @@ Steps to setup a Struts 1.3 application:
     This method returns the instance of "actionForward" to describe where and how the control should be forwarded.
     FindForward returns the instance of "actionForward" with a specified name. So, for name = "success", it will return           specific actionForward.
  9. JSP pages, there are 2 jsp pages: 
-    1st helloUser.jsp with bean taglib: it takes input from user and properta tag defines which property of the ActionForm  is     being entered by user,
+    1st helloUser.jsp with bean taglib: it takes input from user and property tag defines which property of the ActionForm  is     being entered by user,
     and action of the html form is set as the action path in action-mapping in struts-config.html. 
     This way the request will be sent to the Action class (HelloUserAction.java)
     2nd welcomeUser.jsp with html taglib: this page simply gives the response, which contains some msg and the property          (userName) from the ActionForm, thus we need to five name of the ActionForm (from form-bean tag in struts-config.xml)
