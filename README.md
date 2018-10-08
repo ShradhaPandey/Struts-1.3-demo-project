@@ -30,19 +30,19 @@ Steps to setup a Struts 1.3 application:
 5. struts-config.xml:
    in web-inf folder, create a new xml file with this name.
    copy the DOCTYPE from internet for 1.3 version of struts-config.xml
-   The root element in thid xml file is <struts-config>
-   -- <form-beans> tag contains:
+   The root element in thid xml file is (struts-config)
+   -- (form-beans) tag contains:
       Form bean definition,
       declares the name of struts application's Form bean,
       declares the package and class name of the struts application's Form bean.
-   -- <action-mapping> tag contains:
+   -- (action-mapping) tag contains:
       Action definition,
       url of the action,
       name of the related Form bean (same as name given in form bean tag),
       declares the package and class name of the struts application's Action class,
       also the information that where to redirect the servlet if an error occurs,
       forward tag of action tells where to forward or redirect the servlet once the given operation has been executed.
-   -- <message-resource> tag:
+   -- (message-resource) tag:
       provides simple ways to put text in the view page.
  6. create Message Resource file (file mentioned in the msg-resource tag of struts-config.xml)
     in the project I named id MessageBundle.properties, this properties file contains data in key value format.
